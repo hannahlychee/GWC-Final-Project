@@ -10,22 +10,37 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    background-color: white; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: gray;
     color: white;
+}
+
+#lefttext{
+  border-radius: solid;
+  float: left;
 }
