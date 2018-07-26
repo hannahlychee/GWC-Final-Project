@@ -2,25 +2,60 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Study stuff!</title>
   </head>
 
   <body>
     <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="mentalhealth.html">Mental Health</a>
-    <a href="studytips.html">Study Help</a>
+    </br>
+    <center>
+    <a class="active" href="#home">Home</a>
     <a href="grades.html">Grades</a>
+    <a href="studytips.html">Study Help</a>
+    <a href="mentalhealth.html">Mental Health</a>
+    </center>
     </div>
-
     </nav>
 
 
-    <div id="squad">my grades!</div>
+      <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+      <p>Work!!</p>
+      <br>
+      <div style="overflow-x:auto;">
+    <table id= "myTable">
+      <tr>
+        <td><input type="text" name= "fname" placeholder="asst name"></td>
+        <td><input type = "text" name= "lname" placeholder="points received on asst"></td>
+        <td><input type = "text" name= "0name" placeholder="total points of asst"></td>
+        <td><input type = "text" name= "2name" placeholder="percent of grade"></td>
+      </tr>
+    </table>
+    <button id= "button" onclick="theFunction()">Add Assignment</button>
+    <button id= "submit" onclick="submitFunction()">submit the class!</button>
 
 
     <script src="coolio.js"></script>
   </body>
 
 </html>
+
+<!-- <td><input type="text" name= "fname" placeholder="class name"></td> -->
+
+
+<!-- <p> How many classes are you taking? </p>
+<form action="/action_page.php">
+  <input list="numofclasses" name="numofclasses">
+  <datalist id="numofclasses">
+    <option value=1>
+    <option value=2>
+    <option value=3>
+    <option value=4>
+    <option value=5>
+    <option value=6>
+    <option value=7>
+    <option value=8>
+  </datalist>
+  <input type="submit">
+</form> -->
