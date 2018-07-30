@@ -3,3 +3,15 @@
     background: blue;
     background: linear-gradient(to bottom right, DarkMagenta, Navy);
 }
+
+#left {
+  float: left
+}
+
+#right {
+  float: right
+}
+
+#center {
+  float: center
+}
