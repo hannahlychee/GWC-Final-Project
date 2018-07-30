@@ -26,15 +26,16 @@
       <div style="overflow-x:auto;">
     <table id= "myTable">
       <tr>
-        <td><input type="text" name= "fname" placeholder="asst name"></td>
-        <td><input type = "text" name= "lname" placeholder="points received on asst"></td>
-        <td><input type = "text" name= "0name" placeholder="total points of asst"></td>
-        <td><input type = "text" name= "2name" placeholder="percent of grade"></td>
+        <td><input type="text" name= "aname" placeholder="asst name"></td>
+        <td><input type = "text" name= "bname" placeholder="points received on asst"></td>
+        <td><input type = "text" name= "cname" placeholder="total points of asst"></td>
+        <td><input type = "text" name= "dname" placeholder="percent of grade (decimal)"></td>
       </tr>
     </table>
-    <button id= "button" onclick="theFunction()">Add Assignment</button>
+    <button id= "button" onclick="theAddRowFunction()">Add Assignment</button>
     <button id= "submit" onclick="submitFunction()">submit the class!</button>
-
+    <button id= "grade" onclick="findAverageGrade()">find your grade</button>
+    <button id="lettergrade" onclick="findLetterGrade()">Letter Grade</button>
 
     <script src="coolio.js"></script>
   </body>
