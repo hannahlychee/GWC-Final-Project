@@ -43,12 +43,23 @@ function findAverageGrade() {
   for (var j = 0; j < rowCount; j++){
     agrade = allMiniGrades[j]
 
-  if (pointScore >= 0.9){
-    console.log("Your grade is an A.")
-  }
+
 
   }
 
+}
+
+function findLetterGrade(){
+  num = 0
+  count = 0
+  var StudentPoints = AllAssignments[num]["pointsRecieved"]
+  var allPoints = AllAssignments[num]["totalPoints"]
+  var percentScore = StudentPoints/allPoints
+  console.log (percentScore)
+  for (count in AllAssignments){
+    
+
+  }
 }
 
 
