@@ -1,0 +1,84 @@
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Green */
+#anxious {
+    border-color: #4CAF50;
+    color: green;
+    width: 45%;
+    height: 200px;
+    float: left;
+    margin-top: 25px
+
+}
+
+.anxious:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Blue */
+#stressed {
+    border-color: #2196F3;
+    color: dodgerblue;
+    width: 45%;
+    height: 200px;
+    float: right;
+    margin-top: 25px;
+}
+
+.stressed:hover {
+    background: #2196F3;
+    color: white;
+}
+
+/* Orange */
+#happy {
+    border-color: #ff9800;
+    color: orange;
+    width: 45%;
+    height: 200px;
+    float: left;
+    margin-top: 50px ;
+}
+
+.happy:hover {
+    background: #ff9800;
+    color: white;
+}
+
+/* Red */
+#confused {
+    border-color: #f44336;
+    color: red;
+    width: 45%;
+    height: 200px;
+    float: right;
+    margin-top: 50px;
+}
+
+.confused:hover {
+    background: #f44336;
+    color: white;
+  }
+
+  .hero-image {
+      /* The image used */
+      background-image: url("calm.jpegd");
+
+      /* Set a specific height */
+      height: 100%;
+
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 10;
+  }
