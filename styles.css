@@ -13,7 +13,7 @@ p {
 #grad1 {
     height: 60px;
     background: blue;
-    background: linear-gradient(to bottom right, DarkMagenta, Navy);
+    background: linear-gradient(to bottom right, DarkMagenta, Indigo);
 }
 
 
