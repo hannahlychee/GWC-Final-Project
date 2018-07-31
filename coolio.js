@@ -86,10 +86,11 @@ function theAddRowFunction() {
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
     var cell4 = row.insertCell(3);
-    cell1.innerHTML = '<input type="text" name= "fname"  placeholder="asst name">';
-    cell2.innerHTML = '<input type="text" name= "lname"  placeholder="points received on asst">';
-    cell3.innerHTML = '<input type="text" name= "lname" placeholder="total points of asst">';
-    cell4.innerHTML = '<input type="text" name= "lname" placeholder="percent of grade">';
+    cell1.innerHTML = '<input class="cell" type="text" name= "aname" placeholder="assignment name"></td>'
+    cell2.innerHTML = '<input class="cell" type = "text" name= "bname" placeholder="points you got on asst"></td>'
+    cell3.innerHTML ='<input class="cell" type = "text" name= "cname" placeholder="total points of assignment">'
+    cell4.innerHTML = '<input class="cell" type = "text" name= "dname" placeholder="percent of grade (decimal)">'
+
 }
 
 
