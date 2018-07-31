@@ -4,6 +4,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="correctgradestyle.css">
     <title>Study stuff!</title>
   </head>
 
@@ -11,20 +12,17 @@
     <div class="topnav">
     </br>
     <center>
-    <a href="index.html">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="grades.html">Grades</a>
-    <a href="study.html">Study Help</a>
+    <a href="Study.html">Study Help</a>
     <a href="mentalhealth.html">Mental Health</a>
     </center>
     </div>
     </nav>
-
-
-      <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
-      <p>Work!!</p>
-      <br>
-      <div style="overflow-x:auto;">
     <center>
+      <p>Input all of your information and then submit the class! Once the class is submitted, you can calculate your grade!</p>
+      <br>
+      <div style="overflow-x:auto;"></div>
     <table id= "myTable">
       <tr>
         <td><input class="cell" type="text" name= "aname" placeholder="asst name"></td>
@@ -33,12 +31,13 @@
         <td><input class="cell" type = "text" name= "dname" placeholder="percent of grade (decimal)"></td>
       </tr>
     </table>
-    
+
     <button class="chartbutton" id= "button" onclick="theAddRowFunction()">Add Assignment</button>
     <button class="chartbutton" id= "submit" onclick="submitFunction()">submit the class!</button>
     <button class="chartbutton" id= "grade" onclick="findAverageGrade()">find your grade</button>
     <p id="goodgrade"></p>
     <p id="abcd"></p>
+
   </center>
     <script src="coolio.js"></script>
   </body>
