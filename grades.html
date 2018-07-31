@@ -11,9 +11,9 @@
     <div class="topnav">
     </br>
     <center>
-    <a href="index.html">Home</a>
-    <a href="#Grades">Grades</a>
-    <a href="study.html">Study Help</a>
+    <a class="active" href="index.html">Home</a>
+    <a href="grades.html">Grades</a>
+    <a href="studytips.html">Study Help</a>
     <a href="mentalhealth.html">Mental Health</a>
     </center>
     </div>
@@ -24,23 +24,50 @@
       <p>Work!!</p>
       <br>
       <div style="overflow-x:auto;">
+    <center>
     <table id= "myTable">
       <tr>
-        <td><input type="text" name= "aname" placeholder="asst name"></td>
-        <td><input type = "text" name= "bname" placeholder="points received on asst"></td>
-        <td><input type = "text" name= "cname" placeholder="total points of asst"></td>
-        <td><input type = "text" name= "dname" placeholder="percent of grade (decimal)"></td>
+        <td><input class="cell" type="text" name= "aname" placeholder="asst name"></td>
+        <td><input class="cell" type = "text" name= "bname" placeholder="points received on asst"></td>
+        <td><input class="cell" type = "text" name= "cname" placeholder="total points of asst"></td>
+        <td><input class="cell" type = "text" name= "dname" placeholder="percent of grade (decimal)"></td>
       </tr>
     </table>
-    <button id= "button" onclick="theAddRowFunction()">Add Assignment</button>
-    <button id= "submit" onclick="submitFunction()">submit the class!</button>
-    <button id= "grade" onclick="findAverageGrade()">find your grade</button>
-    <button id="lettergrade" onclick="findLetterGrade()">Letter Grade</button>
-
+    
+    <button class="chartbutton" id= "button" onclick="theAddRowFunction()">Add Assignment</button>
+    <button class="chartbutton" id= "submit" onclick="submitFunction()">submit the class!</button>
+    <button class="chartbutton" id= "grade" onclick="findAverageGrade()">find your grade</button>
+    <p id="goodgrade"></p>
+    <p id="abcd"></p>
+  </center>
     <script src="coolio.js"></script>
   </body>
 
 </html>
+
+
+
+<!--
+  <!-- <div class="caption">Grade Calculator!</div>
+  <div id="table">
+  	<div class="header-row row">
+      <span class="cell primary">Name of Assignment</span>
+      <span class="cell">Points Recieved</span>
+      <span class="cell">Total Points</span>
+      <span class="cell">Percent worth of assignment</span>
+    </div>
+       <span class="cell">Trans</span> ``
+    <table id="mytable">
+    <div class="row">
+  	<input type="radio" name="expand">
+      <span id="cell1" class="cell" data-label="Vehicle"><td><input type="text" name= "aname" placeholder="asst name"></td></span>
+      <span id="cell2" class="cell" data-label="Exterior"><td><input type = "text" name= "bname" placeholder="points received on asst"></td></span>
+      <span id="cell3" class="cell" data-label="Interior"><td><input type = "text" name= "cname" placeholder="total points of asst"></td></span>
+      <span id="cell4" class="cell" data-label="Engine"><td><input type = "text" name= "dname" placeholder="percent of grade (decimal)"></td></span>
+    </div>
+    </table> -->
+    <!-- </table> -->
+
 
 <!-- <td><input type="text" name= "fname" placeholder="class name"></td> -->
 

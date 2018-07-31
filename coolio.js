@@ -1,14 +1,19 @@
 var myTable = document.getElementById("myTable")
 
 var AllAssignments = [];
-var rowCount = myTable.rows.length
+
 
 function submitFunction() {
-  var cellCount = myTable.rows[rowCount - 1].cells.length
-  var currentAssignment = {};
+  var rowCount = myTable.rows.length
+  // console.log("row count: " + rowCount)
+  // var cellCount = myTable.rows[rowCount - 1].cells.length
+
 
   for (var i = 0; i < rowCount; i++){
+    var currentAssignment = {};
     var currentRow = myTable.rows[i];
+    // console.log(currentRow);
+
     var assignmentName = currentRow.cells[0].children[0].value;
     currentAssignment["assignmentName"] = assignmentName
     var pointsRecieved = currentRow.cells[1].children[0].value;
@@ -17,55 +22,62 @@ function submitFunction() {
     currentAssignment["totalPoints"] = totalPoints
     var gradePercentage = currentRow.cells[3].children[0].value;
     currentAssignment["gradePercentage"] = gradePercentage
-    console.log(AllAssignments)
-    AllAssignments.push(currentAssignment)
-    // for (var j = 0; j < currentRow.cells.length; j++){
-    //   var currentCellValue = currentRow.cells[j].children[0].value;
-    //   console.log(currentCellValue)
+    AllAssignments.push(currentAssignment);
   }
 }
+
 
 allMiniGrades = []
 totalGrade = []
 
 function findAverageGrade() {
-  i = 0
-  var assignmentPoints = AllAssignments[i]["pointsRecieved"]
-  var assignmentTotalPoints = AllAssignments[i]["totalPoints"]
-  var percentofGrade = AllAssignments[i]["gradePercentage"]
-  var pointScore = assignmentPoints / assignmentTotalPoints
-  var partOfTotalGrade = pointScore * percentofGrade
-  console.log("look here " + partOfTotalGrade)
-  console.log("What this assignment is worth: " + pointScore)
-  i = i + 1
-  allMiniGrades.push(partOfTotalGrade)
-
-  for (var j = 0; j < rowCount; j++){
-    agrade = allMiniGrades[j]
-
-
-
+var count = 0;
+  for (var j = 0; j < AllAssignments.length; j++){
+    var assignmentPoints = AllAssignments[j]["pointsRecieved"]
+    var assignmentTotalPoints = AllAssignments[j]["totalPoints"]
+    var percentofGrade = AllAssignments[j]["gradePercentage"]
+    var pointScore = assignmentPoints / assignmentTotalPoints
+    var partOfTotalGrade = pointScore * percentofGrade
+    console.log("look here " + partOfTotalGrade)
+    allMiniGrades.push(partOfTotalGrade)
+    count = partOfTotalGrade + count
   }
+console.log("look here for total!" + count)
+var goodgrade =document.getElementById("goodgrade")
+goodgrade.insertAdjacentHTML("beforeend" , "this is your grade: " + count)
 
+if (count <= 1 && count >= .90){
+  var abcd = document.getElementById("abcd")
+  abcd.insertAdjacentHTML("beforeend" , "You got an A!")}
+else if (count <= .89 && count >= .80){
+  var abcd = document.getElementById("abcd")
+  abcd.insertAdjacentHTML("beforeend" , "You got a B!")}
+else if (count <= .79 && count >= .70){
+  var abcd = document.getElementById("abcd")
+  abcd.insertAdjacentHTML("beforeend" , "You got a C!")}
+else if (count <=	.69 && count >= .60){
+  var abcd = document.getElementById("abcd")
+  abcd.insertAdjacentHTML("beforeend" , "You got a D!")}
+else{
+  var abcd = document.getElementById("abcd")
+  abcd.insertAdjacentHTML("beforeend" , "Either you're only calculating one assignment or you're not doing well sister...")
+}
 }
 
-function findLetterGrade(){
-  num = 0
-  count = 0
-  var StudentPoints = AllAssignments[num]["pointsRecieved"]
-  var allPoints = AllAssignments[num]["totalPoints"]
-  var percentScore = StudentPoints/allPoints
-  console.log (percentScore)
-  for (count in AllAssignments){
-    
 
-  }
-}
-
-
-
-
-
+// }
+//
+// function findLetterGrade(){
+//   num = 0
+//   count = 0
+//   var StudentPoints = AllAssignments[num]["pointsRecieved"]
+//   var allPoints = AllAssignments[num]["totalPoints"]
+//   var percentScore = StudentPoints/allPoints
+//   console.log (percentScore)
+//   for (count in AllAssignments){
+//
+//
+//   }
 
 function theAddRowFunction() {
     var table = document.getElementById("myTable");
