@@ -24,8 +24,10 @@ function submitFunction() {
     currentAssignment["gradePercentage"] = gradePercentage
     AllAssignments.push(currentAssignment);
   }
-}
+  var submitMessage =document.getElementById("gradesubmitted")
+  submitMessage.insertAdjacentHTML("beforeend" , "Grades successfully submitted! Click 'Find You Grade' next!")
 
+}
 
 allMiniGrades = []
 totalGrade = []
@@ -42,6 +44,8 @@ var count = 0;
     allMiniGrades.push(partOfTotalGrade)
     count = partOfTotalGrade + count
   }
+var submitMessage =document.getElementById("gradesubmitted");
+submitMessage.style.display = 'none';
 console.log("look here for total!" + count)
 var goodgrade =document.getElementById("goodgrade")
 goodgrade.insertAdjacentHTML("beforeend" , "this is your grade: " + count)

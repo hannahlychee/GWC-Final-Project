@@ -76,6 +76,12 @@ html,body
   font-size: 24px;
 }
 
+
+#contentArea {
+    margin-top: 50px;
+}
+
 .reghappy{
     font-size: 20px;
+
 }

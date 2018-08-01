@@ -11,9 +11,17 @@ p {
 }
 
 #grad1 {
-    height: 60px;
-    background: blue;
-    background: linear-gradient(to bottom right, DarkMagenta, Navy);
+  text-align:center;
+  margin:auto;
+  font-family:Roboto-Mono;
+  color:white;
+  font-size:40px;
+  padding-top: 5px;
+  font-weight:bold;
+  margin-top: 45px;
+  height: 60px;
+  background: blue;
+  background: linear-gradient(to bottom right, DarkMagenta, Navy);
 }
 
 
@@ -63,16 +71,16 @@ p {
 * {box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+/*.slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
+}*/
 
 /* Hide the images by default */
-.mySlides {
+/*.mySlides {
     display: none;
-}
+}*/
 
 /* Next & previous buttons */
 /*.prev, .next {
