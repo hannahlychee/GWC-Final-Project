@@ -75,3 +75,7 @@ html,body
 .regtext{
   font-size: 24px;
 }
+
+#contentArea {
+    margin-top: 50px;
+}
